@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manual Payment Portal">
+  <title>Manual Payment Portal</title>
+</head>
+<body>
+
+  <header>
+    <h1>Manual Payment Portal</h1>
+    <p>Secure Manual Payment Submission</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Submit Your Payment</h2>
+      <p>Enter your payment details below.</p>
+
+      <form id="paymentForm">
+
+        <label for="orderId">Order ID</label>
+        <input
+          type="text"
+          id="orderId"
+          placeholder="Enter your Order ID"
+          required
+        >
+
+        <label for="amount">Payment Amount (BDT)</label>
+        <input
+          type="number"
+          id="amount"
+          min="1"
+          placeholder="Enter amount"
+          required
+        >
+
+        <label for="method">Payment Method</label>
+        <select id="method" required>
+          <option value="">Select payment method</option>
+          <option value="bkash">bKash</option>
+          <option value="nagad">Nagad</option>
+          <option value="rocket">Rocket</option>
+          <option value="upay">Upay</option>
+        </select>
+
+        <label for="sender">Sender Number</label>
+        <input
+          type="tel"
+          id="sender"
+          placeholder="01XXXXXXXXX"
+          required
+        >
+
+        <label for="trxId">Transaction ID (TrxID)</label>
+        <input
+          type="text"
+          id="trxId"
+          placeholder="Enter your TrxID"
+          required
+        >
+
+        <button type="button" disabled>
+          Payment Submission Coming Soon
+        </button>
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Manual Payment Portal</p>
+  </footer>
+
+</body>
+</html>
