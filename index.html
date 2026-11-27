@@ -74,15 +74,27 @@
   <footer>
     <p>© 2026 Manual Payment Portal</p>
   </footer>
-<script type="module">
+
+  <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+  import { getAuth } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+
   const firebaseConfig = {
+    const firebaseConfig = {
   apiKey: "AIzaSyB_oZtHRFFXoqhxgx4K7Ue2SKFPOjN20MM",
   authDomain: "manual-payment-portal.firebaseapp.com",
   projectId: "manual-payment-portal",
   storageBucket: "manual-payment-portal.firebasestorage.app",
   messagingSenderId: "671213678390",
   appId: "1:671213678390:web:d63a0f1296349bbc51cd97"
-};
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+
+  console.log("Firebase connected successfully!");
+</script>
+  
 </script>
 </body>
 </html>
